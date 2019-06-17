@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: springcloud-web-admin-feign
@@ -8,11 +7,18 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
-  profiles: dev
-server:
-  port: 8765
-
-
 feign:
   hystrix:
     enabled: true
+---
+spring:
+  profiles: dev
+server:
+  port: 8765
+---
+spring:
+  profiles: prod
+server:
+  port: 8766
+
+
