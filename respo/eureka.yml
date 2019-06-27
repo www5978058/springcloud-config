@@ -19,8 +19,6 @@ eureka:
 ---
 spring:
   profiles: dev
-server:
-  port: 8761
 ---
 spring:
   profiles: prod
